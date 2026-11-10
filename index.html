@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Browserku</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header id="topbar">
+  <button class="ib" id="btnHome" aria-label="Beranda">⌂</button>
+  <input id="urlbar" placeholder="Telusuri atau ketik URL" autocomplete="off">
+  <button id="btnTabs" aria-label="Tab">1</button>
+  <button class="ib" id="btnMenu" aria-label="Menu">⋮</button>
+</header>
+<div id="progress"></div>
+<main id="content">
+  <section id="home">
+    <h1 class="logo"><span>G</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span></h1>
+    <form id="searchForm" class="search">
+      <input id="searchInput" placeholder="Telusuri Google atau ketik URL" autocomplete="off">
+    </form>
+    <div class="pills">
+      <button class="pill" id="btnAI">✦ Mode AI</button>
+      <button class="pill" id="btnIncog">🕶 Samaran</button>
+    </div>
+    <div class="card shortcuts" id="shortcuts"></div>
+  </section>
+  <div id="frames"></div>
+</main>
+<div id="menuBackdrop" hidden></div>
+<nav id="menu" hidden>
+  <div class="navrow">
+    <button data-a="back">←</button><button data-a="fwd">→</button>
+    <button data-a="bm">☆</button><button data-a="reload">⟳</button>
+  </div>
+  <button data-a="newtab">＋ Tab baru</button>
+  <button data-a="incog">🕶 Tab Samaran baru</button>
+  <hr>
+  <button data-a="hist">🕘 Histori</button>
+  <button data-a="clear">🗑 Hapus data penjelajahan</button>
+  <hr>
+  <button data-a="bmlist">★ Bookmark</button>
+  <button data-a="tabs">▣ Tab terbuka</button>
+  <button data-a="newtab-open">↗ Buka di tab browser</button>
+</nav>
+<div id="sheet" hidden>
+  <div class="sheet-box">
+    <h2 id="sheetTitle"></h2>
+    <ul id="sheetList"></ul>
+    <div class="sheet-actions"><button id="sheetClear"></button><button id="sheetClose">Tutup</button></div>
+  </div>
+</div>
+<div id="toast" hidden></div>
+<script src="script.js"></script>
+</body>
+</html>
